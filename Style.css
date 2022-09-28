@@ -1,0 +1,142 @@
+.Navbartop{
+     background-color: #f3f3f3;
+     text-align: center;
+     height: auto;
+     display: flex;
+     align-items: center;
+}
+.Navbartop{
+    overflow: auto;
+}
+.Navbartop li{
+    list-style: none;
+    float: left;
+}
+.Navbartop li a{
+    text-decoration: none;
+    margin: 15px;
+    padding: 12px 13px;
+    color: grey;
+}
+.Navbartop img{
+    width: 100px;
+    height: 40px;
+}
+.fa-solid{
+    color: rgb(238, 15, 52);  
+}
+#yellow{
+    color: rgb(245, 245, 94);
+}
+#grey{
+    color: #704280;
+}
+ /* .Navbartop li:not(:first-child ):before {
+    content: " | ";
+} */
+/* .Navbartop li:first-child :after{
+    content: " | ";
+} */
+.Navbarmid{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: grey
+}
+  
+.Navbarmid div li a{
+    text-decoration: none;
+}
+.Navbarmid li{
+    list-style: none;
+    float: left;
+}
+.Navbarmid li a{
+    text-decoration: none;
+    margin: 15px;
+    color: grey;
+}
+.Navbarmid div img{
+    width: 250px;
+    height: 100px
+}
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    /* position: fixed; */
+    /* top: 10px;
+    left: 50px; */
+}
+.Navbar>div{
+    height: 40px;
+    /* border: 1px solid red; */
+}
+/* .Navbar div a{ */
+.Navbar .active a{
+text-decoration: none;
+color: #1f1e1e;
+font-weight: bold;
+letter-spacing: 0.1rem;
+
+}
+.Navbar .active :hover{
+    color: rgb(243, 56, 87);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+}
+
+svg{
+    height: 20px;
+    align-content: center;
+    width: 20px;
+    /* border: 1px solid rgb(231, 80, 105); */
+}
+.Navbarmid svg{
+    margin-right: 5px;
+    height: 20px;
+}
+/* body{
+    background: url("https://images.pexels.com/photos/571169/pexels-photo-571169.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height:1000px;
+} */
+#submenu1 {
+ list-style: none;
+ display: none;
+}
+#submenu1 ul{
+    list-style: none;
+}
+.active:hover #submenu1{
+    /* display: block; */
+    position: absolute;
+    /* background: rgb(10, 100, 10); */
+    margin-top: 15px;
+    margin-left: -270px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow : none;
+    
+}
+.active:hover #submenu1 a{
+     color: grey;
+    font-size: 12px;
+    box-shadow : none;
+    font-family:sAvenir-Next,sans-serif ;
+    
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: none;
+}
+.Navbar{
+    position:static;
+}
