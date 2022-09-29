@@ -17,6 +17,9 @@
     margin: 15px;
     padding: 12px 13px;
     color: grey;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: sans-serif;
 }
 .Navbartop img{
     width: 100px;
@@ -86,14 +89,15 @@ text-decoration: none;
 color: #1f1e1e;
 font-weight: bold;
 letter-spacing: 0.1rem;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height: 16px;
 
 }
 .Navbar .active :hover{
-    color: rgb(243, 56, 87);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-   
+   color: #f39;
 }
-
 svg{
     height: 20px;
     align-content: center;
@@ -139,4 +143,169 @@ svg{
 }
 .Navbar{
     position:static;
+}
+/* #topslider{
+    /* background-color: red; */
+    /* border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    position: relative;
+animation:slider 9s infinite linear;
+}
+@keyframes slider {
+    0% { background-image: url("https://logan.nnnow.com/content/dam/nnnow-project/20-sep-2022/Mac_Topbannerdesktop.jpg ") ;}
+    35% { background-image: url("https://logan.nnnow.com/content/dam/nnnow-project/15-sep-2022/Sephora_Homepagebanner_kajaldesktop.jpg ") ;}
+    75% { background-image: url(" https://logan.nnnow.com/content/dam/nnnow-project/15-sep-2022/SC_TopBanner_Exclusivelyatsephoradesktop.jpg" );}
+    100% {background-image: url("https://logan.nnnow.com/content/dam/nnnow-project/26-aug-2022/se/TooFaced_TopBannerdesktop.jpg");}
+} */ */
+.container{
+    background-color: red;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    /* animation:slider 9s infinite linear;
+    animation-iteration-count: infinite; */
+    /* animation: ; */
+}
+/* @keyframes slider{
+    0% {#content1}
+    20% {#content2}
+} */
+
+img{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.active1{
+    display: block;
+}
+.dot-container{
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.dot-container button{
+    height: 18px;
+    width: 13px;
+    border: 3px solid #f3f3f3;
+    background-color:#c5c5c5;
+    border-radius: 50%;
+    /* font-size: 10px; */
+
+}
+.dot-container button:nth-child(1){
+    background-color: rgb(80, 77, 77);
+}
+#prev, #next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-family: bolder;
+    color: black;
+}
+#prev{
+    left: 10px;
+    top: 500px;
+}
+#next{
+    right: 30px;
+    top: 500px;
+}
+.midcontainer{
+    display: flex;
+    width: 80%;
+    height:auto;
+    /* border:1px solid red; */
+    margin: auto;
+    gap: 20px;
+}
+.midcontainer div{
+    background-color: black;
+    color: white;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.mc1{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    color: black;
+}
+.mc1 img{
+    display: block;
+}
+.mc2{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    gap: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+.mc2 img{
+    display: block;
+}
+.mc2 div{
+    text-align: center;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.grid1 img{
+    display: block;
+}
+h1{
+    text-align: left;
+    font-size: 20px;
+    font-family:avenir-Next, sans-serif;
+    line-height: 23px;
+}
+p{
+    text-align: left;
+    line-height: 16px;
+    font-family: sans-serif;
+}
+.backtotop{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.backtotop button{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 0;
+    width: 30%;
+    margin: auto;
+    background: #abc72c;
+    cursor: pointer;
+    font-size: .77778rem;
+    padding: 20px;
+    text-align: center;
+    color: #000;
 }
