@@ -79,6 +79,7 @@ input {
    /* top: 10px;
    left: 50px; */
 }
+
 .Navbar>div{
    height: 40px;
    /* border: 1px solid red; */
@@ -115,6 +116,9 @@ svg{
 #submenu1 {
 list-style: none;
 display: none;
+overflow: visible;
+background-color: #fff;
+width: 100%;
 }
 #submenu1 ul{
    list-style: none;
@@ -130,7 +134,8 @@ display: none;
    display: flex;
    flex-wrap: wrap;
    box-shadow : none;
-   
+   overflow: visible;
+   z-index: 1;
 }
 .active:hover #submenu1 a{
     color: grey;
@@ -397,7 +402,7 @@ i{
    color: #000;
 }
 .footertc{
-   width:30%;
+   width:50%;
    margin: auto;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -405,22 +410,52 @@ i{
    grid-template-rows: 1fr;
    text-align: center;
 }
+
+.footertc >  div {
+   border: 1px solid red ;
+}
+
+.terms{
+   /* border: 1px solid red ; */
+   width: 400px;
+   margin: 0;
+   display: flex;
+   gap: 20px;
+   /* text-decoration: none; */
+   list-style-type: none;
+}
+.terms li{
+   text-decoration: none;
+}
+
+.line{
+   border: 1px solid ;
+   text-decoration: none;
+}
+ .terms> li:hover{
+   color: red;
+}
+
 .footertc a{
+   border: 1px solid ;
    text-decoration: none;
    color: grey;
    font-size: 13px;
    font-weight: 700;
    line-height: 18px;
    font-family: sans-serif;
+   width: 100%;
 }
-.footertc :hover{
+/* .footertc :hover{
    color:#ff3399 ;
-}
-/* .vertical{
-   height:18px;
-   width: 5px;
-   border-left: 1px solid black;
 } */
+.vertical{
+   display: flex;
+   height:18px;
+   width: 0px;
+   border-left: 1px solid black;
+   margin-top: -20px;
+}
 h2{
    text-align: center;
    font-size: 14px;
