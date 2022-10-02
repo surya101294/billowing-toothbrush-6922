@@ -1,4 +1,4 @@
-let makeup=[
+var makeup=[
     {
     image_url:"https://cdn02.nnnow.com/web-images/medium/styles/KO2GNHYI7VN/1539589546533/1.jpg",
     offer: "BEST SELLER",
@@ -54,16 +54,18 @@ let makeup=[
     name:"Colorful Mono Eye Shadow-258",
     price: "Rs 900",
     desc:"3 more offers"
-    }]
-makeup.forEach(function(el){
+    },
+  ]
+    let cartArray=JSON.parse(localStorage.getItem("cart_item")) || []
+  makeup.forEach(function(el){
     let card=document.createElement("div")
     let img=document.createElement("img")
     img.src= el.image_url;
-    let offer=document.createElement("h1")
+    let offer=document.createElement("p")
     offer.innerText=el.offer
-    let collection=document.createElement("h2")
+    let collection=document.createElement("h6")
     collection.innerText=el.collection
-    let name=document.createElement("h3")
+    let name=document.createElement("h4")
     name.innerText=el.name;
     let price=document.createElement("h4")
     price.innerText=el.price;
@@ -76,14 +78,15 @@ makeup.forEach(function(el){
         addToCartfun(el);
       } );
       card.append(img,offer,collection,name,price,desc,btn)
-
-     document.querySelector("#container").append(card)
-
+      // console.log(el, "check")
+     document.querySelector("#itemcontainer").append(card)
+      
+    // localStorage.setItem("Data", "products" );
    function addToCartfun(el){
      cartArray.push(el)
-     localStorage.setItem("page1", JSON.stringify(cartArray))
+    //  console.log(el)
+     localStorage.setItem("cart_item", JSON.stringify(cartArray))
    }
-    // document.querySelector("tbody").append(card)
     // console.log(card)
+    console.log(cartArray)
 })
-
