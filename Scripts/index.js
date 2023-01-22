@@ -22,7 +22,7 @@ function indicator(num){
     });
     let s=document.querySelector(".dot-container button:nth-child(" +num+ ")")
     s.style.backgroundColor="grey";
-}
+   }
 let images=document.querySelectorAll(".image-container img")
 console.log(images)
 function dot(index){
@@ -32,4 +32,5 @@ function dot(index){
     document.getElementById("content"+ index).classList.add("active1");
     i= index-1; 
     indicator(index);
+
 }
