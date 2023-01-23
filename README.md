@@ -1,4 +1,4 @@
 # billowing-toothbrush-6922
 https://tranquil-blancmange-8f028a.netlify.app/
 
-![navbar sastadeal](https://user-images.githubusercontent.com/110034571/213982898-a77adae8-f1c2-4c42-b028-b02cfc4825ae.png)
+![tranquil-blancmange-8f028a netlify app_](https://user-images.githubusercontent.com/112858852/213993463-8036b7a6-e9c8-4ff0-a0f8-5d84a3a2cccb.png)
