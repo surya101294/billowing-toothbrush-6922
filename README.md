@@ -1,4 +1,7 @@
-# billowing-toothbrush-6922- clone of Sephora.com
+# Sephora_website_clone
+Sephora is a French multinational retailer of personal care and beauty products.  
+TECH STACK: HTML | CSS | JAVASCRIPT
+
 # Deployed Link :
 https://tranquil-blancmange-8f028a.netlify.app/
 
